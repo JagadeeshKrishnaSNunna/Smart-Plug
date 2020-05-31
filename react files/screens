@@ -1,0 +1,26 @@
+import React from 'react'
+import {View,StyleSheet} from 'react-native'
+import Header from '../components/Header'
+import AddButton from '../components/AddButton'
+import DeviceList from '../components/DeviceList'
+import Scroll_View from '../components/Scroll_View'
+//
+<Scroll_View />
+const StartScreen=()=>{
+    return(
+        <View style={styles.screen}>
+            <Header />
+            <AddButton />
+        </View>
+    );
+    
+};
+
+const styles=StyleSheet.create({
+    screen:{
+        flex:1,
+        alignItems:"center",
+    }
+});
+
+export default StartScreen;
